@@ -195,7 +195,7 @@ const HTML = `<!doctype html>
   <div class="two">
     <div class="card"><h2>我们合成的 · 主人档案 <button id="synth">重新合成</button></h2>
       <div class="body md" id="ours"><div class="empty">还没有合成过</div></div></div>
-    <div class="card"><h2>腾讯自带的 · 团队规范 <span class="sub" id="tencent-at"></span></h2>
+    <div class="card"><h2>自动生成 · 工作守则 <span class="sub" id="tencent-at"></span></h2>
       <div class="body md" id="tencent"><div class="empty">读不到</div></div></div>
   </div>
 </section>
@@ -215,7 +215,7 @@ const HTML = `<!doctype html>
     <div class="body" id="l0"><div class="empty">加载中…</div></div></div>
 </section>
 
-<footer>读自 TencentDB Agent Memory · <span id="gw"></span></footer>
+<footer>本地记忆底座 · <span id="gw"></span></footer>
 </div>
 <script>
 const TC = ${JSON.stringify(TYPE_COLOR)};
