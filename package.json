@@ -1,0 +1,25 @@
+{
+  "name": "whale-persona",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Swap in your own L3 on top of TencentDB Agent Memory: keep their storage, own the persona.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.16"
+  },
+  "bin": {
+    "whale-persona": "src/persona-synth.mjs"
+  },
+  "scripts": {
+    "synth": "node src/persona-synth.mjs",
+    "show": "node src/persona-synth.mjs --show"
+  },
+  "files": [
+    "src",
+    "prompts",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ]
+}
