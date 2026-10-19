@@ -38,9 +38,11 @@ function deepseekKey() {
 }
 
 // ── 从 MemoryCore 取 L1 原子记忆 ────────────────────────────────────────
+const MAX_ATOMS = Number(process.env.WHALE_MAX_ATOMS || 20000)
+
 async function fetchAtoms() {
   const all = []
-  for (let offset = 0; offset < 2000; offset += 100) {
+  for (let offset = 0; offset < MAX_ATOMS; offset += 100) {
     const res = await fetch(`${GATEWAY}/v3/atomic/query`, {
       method: 'POST',
       headers: {
